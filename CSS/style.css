@@ -1,0 +1,57 @@
+.header { background: rgb(9, 197, 153); 
+            
+            margin-bottom: 2%;
+            margin-left: 1%;
+            margin-right: 1%;
+}
+
+.form_registro_usuario{ background: rgb(231, 86, 37);
+    padding: 1%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.form_product_select{ background: rgb(231, 86, 37);
+    padding: 1%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.form_metodo_pago{ background: rgb(231, 86, 37);
+    padding: 1%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.form_tipo_despacho{ background: rgb(231, 86, 37);
+    padding: 1%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.body_color {
+    background: rgb(9, 197, 153);
+}
+
+.label {
+    font-size: 110%;
+}
+
+
+
+/*
+div label {
+    width: 45%;
+    float: left;
+  }
+
+div input {
+    width: 55%;
+    float: right;
+}
+
+h3 {color: white}
+
+*/

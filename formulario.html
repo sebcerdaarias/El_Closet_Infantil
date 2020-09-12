@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<Head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/flexboxgrid.css" type="text/css">
+    <link rel="stylesheet" href="js/jquery.js">
+
+    <script src="validarRut.js"></script>
+    <script>
+        $(function(){
+            $("#Formulario").validate();
+    });
+    </script>
+
+    <title> Formulario </title>
+</head>
+
+<body class="body_color">
+    <header>
+        <div class="center-lg center-xs center-lg">
+            <div class="header">
+                <!--<h3>Formulario de registro</h3>-->
+                <img src="IMG/Logo.png" alt="Logotipo de El closet infantil">
+            </div>
+        </div>
+    </header>
+
+    <div class="center-lg center-xs center-lg">
+            <h3>
+                Volver a la <a href="Index.html">Página principal</a>
+            </h3>
+        </div>
+
+    <!-- metodo POST: envía los datos ocultos a la"" vista del usuario -->
+    <!-- metodo GET: envía los datos a la vista del usuario -->
+    <form method="POST" action="formulario.html">
+        <div class="container">
+            <div class="form_registro_usuario center-lg center-xs label">
+                <label>Nombre:</label>
+                <input type="text" name="nombres" required pattern="[A-Za-z0-9- ]+" minlength="2" maxlength="30"
+                    placeholder="Primer y segundo nombre">
+                <br>
+                <label>Apellido paterno:</label>
+                <input type="text" name="apellidoPat" required pattern="[A-Za-z0-9]+" minlength="2" maxlength="15"
+                    placeholder="apellido paterno">
+                <br>
+                <label>Apellido materno:</label>
+                <input type="text" name="apellidoMat" required pattern="[A-Za-z0-9]+" minlength="2" maxlength="15"
+                    placeholder="apellido materno">
+                <br>
+                <label>RUN:</label>
+                <input type="text" name="rut" required minlength="8" maxlength="9" 
+                    placeholder="Sin puntos y sin guíon">
+                <br>
+                <label>Fecha de nacimiento:</label>
+                <input type="date" name="fechaNac" min="1930-01-01" max="2001-01-01" required>
+                <br>
+                <label>Fono contacto</label>
+                <input type="text" name="fono" required pattern="[0-9]+" minlength="9" maxlength="11"
+                    placeholder="Fono contacto">
+                <br>
+                <label>Correo electrónico</label>
+                <input type="text" name="correo" required minlength="10" maxlength="50" placeholder="Correo">
+                <br>
+                <label>Comuna</label>
+                <select name="comuna">
+                    <option selected>Seleccione una</option>
+                    <option> Valparaíso</option>
+                    <option> Casablanca </option>
+                    <option> Concón </option>
+                    <option> Viña del Mar </option>
+                    <option> Quilpué </option>
+                    <option> Villa Alemana </option>
+                    <option> Limache </option>
+                    <option> Olmué </option>
+                    <option> Quillota </option>
+                </select>
+
+            </div>
+        </div>
+        <div class="form_product_select left-lg left-xs">
+            <label><h4>Seleccione el o los productos que desea</h4></label>
+
+            <input type="checkbox">
+            <label>Conjunto niño</label>
+                <br>
+                <input type="checkbox">
+                <label>Conjunto niña</label>
+                    <br>
+                    <input type="checkbox">
+                    <label>Chaqueta niño</label>
+                        <br>
+                        <input type="checkbox">
+                        <label>Chaqueta niña</label>
+                            <br>
+                            <input type="checkbox">
+                            <label>Zapatilla niño</label>
+                                <br>
+                                <input type="checkbox">
+                                <label>Zapatilla niña</label>
+                                    <br>
+                                    <input type="checkbox">
+                                    <label>Vestido rosa</label>
+                                        <br>
+                                        <input type="checkbox">
+                                        <label>Vestido verde</label>
+                                            <br>
+                                            <input type="checkbox">
+                                            <label>Short azul</label>
+                                                <br>
+                                                <input type="checkbox">
+                                                <label>Short verde</label>
+                                                    <br>
+                                                    <input type="checkbox">
+                                                    <label>Jeans niño</label>
+                                                        <br>
+                                                        <input type="checkbox">
+                                                        <label>Jeans niña</label>
+                                                            <br>
+                                                            <input type="checkbox">
+                                                            <label>Polera niño</label>
+                                                            <br>
+                                                                <input type="checkbox">
+                                                                 <label>Polera niña</label>
+                                                                <br><br>
+        </div>
+
+        <div class="form_tipo_despacho center-lg center-xs">
+            <label><h4>Seleccione tipo de despacho</h4></label>
+            <input name="tipoDespacho" type="radio" value="a_domicilio"> <label>Despacho a domicilio</label>
+            <br>
+            <input name="tipoDespacho" type="radio" value="retiro_tienda"> <label>Retiro en tienda</label>
+            <br><br>
+        </div>
+
+        <div class="container left-lg left-xs">
+            <div class="form_metodo_pago left-lg left-xs">
+                <label><h4>Seleccione tipo de pago</h4></label>
+                <input name="MetodoPago" type="radio" value="debito"> <label>Débito</label>
+                <br>
+                <input name="MetodoPago" type="radio" value="visa"> <label>Visa</label>
+                <br>
+                <input name="MetodoPago" type="radio" value="mastercard"> <label>MasterCard</label>
+                <br>
+                <input name="MetodoPago" type="radio" value="transferencia"> <label>Transferencia</label>
+                <br><br>
+
+            </div>
+        </div>
+
+        <div class="container center-lg center-xs">
+            <h4><label>Háganos saber si tiene algún comentario adicional</label></h4>
+            <!-- rows= alto del cuadro de texto -->
+            <!-- cols= ancho del cuadro de texto -->
+            <textarea maxlength="100" rows="5" cols="60"></textarea>
+            <br><br>
+        </div>
+
+        <br><br><br>
+        <div class="center-lg center-xs">
+            <button type="submit" value="Submit" style='width:110px; height:50px'>Enviar</button>
+        </div>
+    </form>
+
+    
+
+</body>
+
+</html>
