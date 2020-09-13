@@ -56,6 +56,6 @@ function validarRut(rut) {
 
 $.validator.addMethod("formatorut", function (value, element) {
             return this.optional(element) || /^[0-9\d|kK]+$/.test(value);
-        }, "Formato rut no válido")
+        }, "Formato rut no válido")})
 
 
