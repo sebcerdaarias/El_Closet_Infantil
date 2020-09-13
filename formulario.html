@@ -19,7 +19,7 @@
     <title> Formulario </title>
 </head>
 
-<body class="body_color">
+<body class="body_color" >
     <header>
         <div class="center-lg center-xs center-lg">
             <div class="header">
@@ -38,47 +38,66 @@
     <!-- metodo POST: envía los datos ocultos a la"" vista del usuario -->
     <!-- metodo GET: envía los datos a la vista del usuario -->
     <form method="POST" action="formulario.html">
-        <div class="container">
-            <div class="form_registro_usuario center-lg center-xs label">
-                <label>Nombre:</label>
-                <input type="text" name="nombres" required pattern="[A-Za-z0-9- ]+" minlength="2" maxlength="30"
-                    placeholder="Primer y segundo nombre">
-                <br>
-                <label>Apellido paterno:</label>
-                <input type="text" name="apellidoPat" required pattern="[A-Za-z0-9]+" minlength="2" maxlength="15"
-                    placeholder="apellido paterno">
-                <br>
-                <label>Apellido materno:</label>
-                <input type="text" name="apellidoMat" required pattern="[A-Za-z0-9]+" minlength="2" maxlength="15"
-                    placeholder="apellido materno">
-                <br>
-                <label>RUN:</label>
-                <input type="text" name="rut" required minlength="8" maxlength="9" 
-                    placeholder="Sin puntos y sin guíon">
-                <br>
-                <label>Fecha de nacimiento:</label>
-                <input type="date" name="fechaNac" min="1930-01-01" max="2001-01-01" required>
-                <br>
-                <label>Fono contacto</label>
-                <input type="text" name="fono" required pattern="[0-9]+" minlength="9" maxlength="11"
-                    placeholder="Fono contacto">
-                <br>
-                <label>Correo electrónico</label>
-                <input type="text" name="correo" required minlength="10" maxlength="50" placeholder="Correo">
-                <br>
-                <label>Comuna</label>
-                <select name="comuna">
-                    <option selected>Seleccione una</option>
-                    <option> Valparaíso</option>
-                    <option> Casablanca </option>
-                    <option> Concón </option>
-                    <option> Viña del Mar </option>
-                    <option> Quilpué </option>
-                    <option> Villa Alemana </option>
-                    <option> Limache </option>
-                    <option> Olmué </option>
-                    <option> Quillota </option>
-                </select>
+        <div class="container" >
+            <div class="form_registro_usuario left-lg left-xs label">
+                <table class="table">
+                    <label><h4>Ingrese sus datos</h4></label>
+                    <tr>
+                        <td><label>Nombre:</label>
+                        </td>
+                        <td><input type="text" name="nombres" required pattern="[A-Za-z0-9- ]+" minlength="2" maxlength="30"
+                            placeholder="Primer y segundo nombre"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Apellido paterno:</label>
+                        </td>
+                        <td><input type="text" name="apellidoPat" required pattern="[A-Za-z0-9]+" minlength="2" maxlength="15"
+                            placeholder="apellido paterno"></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Apellido materno:</label></td>
+                        <td> <input type="text" name="apellidoMat" required pattern="[A-Za-z0-9]+" minlength="2" maxlength="15"
+                            placeholder="apellido materno"></td>
+                    </tr>
+                    <tr>
+                        <td><label>RUN:</label></td>
+                        <td><input type="text" name="rut" required minlength="8" maxlength="9" 
+                            placeholder="Sin puntos y sin guíon"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Fecha de nacimiento:</label></td>
+                        <td><input type="date" name="fechaNac" min="1930-01-01" max="2001-01-01" required></td>
+                    </tr>
+                    <tr>
+                        <td><label>Fono contacto</label></td>
+                        <td><input type="text" name="fono" required pattern="[0-9]+" minlength="9" maxlength="11"
+                            placeholder="Fono contacto"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Correo electrónico</label></td>
+                        <td><input type="text" name="correo" required minlength="10" maxlength="50" placeholder="Correo"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Comuna</label></td>
+                        <td> <select name="comuna">
+                            <option selected>Seleccione una</option>
+                            <option> Valparaíso</option>
+                            <option> Casablanca </option>
+                            <option> Concón </option>
+                            <option> Viña del Mar </option>
+                            <option> Quilpué </option>
+                            <option> Villa Alemana </option>
+                            <option> Limache </option>
+                            <option> Olmué </option>
+                            <option> Quillota </option>
+                        </select></td>
+                    </tr>
+                   
+                </table>
+            
+            
+                
+               
 
             </div>
         </div>
@@ -129,7 +148,7 @@
                                                                 <br><br>
         </div>
 
-        <div class="form_tipo_despacho center-lg center-xs">
+        <div class="form_tipo_despacho left-lg left-xs">
             <label><h4>Seleccione tipo de despacho</h4></label>
             <input name="tipoDespacho" type="radio" value="a_domicilio"> <label>Despacho a domicilio</label>
             <br>
@@ -137,20 +156,6 @@
             <br><br>
         </div>
 
-        <div class="container left-lg left-xs">
-            <div class="form_metodo_pago left-lg left-xs">
-                <label><h4>Seleccione tipo de pago</h4></label>
-                <input name="MetodoPago" type="radio" value="debito"> <label>Débito</label>
-                <br>
-                <input name="MetodoPago" type="radio" value="visa"> <label>Visa</label>
-                <br>
-                <input name="MetodoPago" type="radio" value="mastercard"> <label>MasterCard</label>
-                <br>
-                <input name="MetodoPago" type="radio" value="transferencia"> <label>Transferencia</label>
-                <br><br>
-
-            </div>
-        </div>
 
         <div class="container center-lg center-xs">
             <h4><label>Háganos saber si tiene algún comentario adicional</label></h4>
@@ -160,12 +165,15 @@
             <br><br>
         </div>
 
-        <br><br><br>
-        <div class="center-lg center-xs">
-            <button type="submit" value="Submit" style='width:110px; height:50px'>Enviar</button>
-        </div>
     </form>
 
+    <br><br><br>
+    <div class="center-lg center-xs">
+        <form method="get" action="Pago.html">
+
+            <input type="submit" value="Siguiente" />
+       <!-- <button type="submit" value="Submit" style='width:110px; height:50px'>Siguiente</button>-->
+    </div>
     
 
 </body>
