@@ -10,7 +10,6 @@ body{
     font-size: 16px;
     padding-top: 55px;
 }
-
 header{
     background: rgb(231, 86, 37);
     position: fixed;
@@ -98,53 +97,97 @@ header{
 }
 
 /*Efectos Protocolo covid*/
-.protocolo-covid {  background: rgb(24, 40, 69);
-                    text-align: center;               
+.protocolo-covid {  
+    background: rgb(24, 40, 69);
+    text-align: center;               
 }
 .bodyProtocol{
     background: white;
 }
-.img_protocol_covid{
-    width: 65%; 
+
+.img_protocol_covid {
+    width: 65%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .subtitle-covid {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
-.title-covid {
 
+.title-covid {
     text-align: center;
     font-size: 30px;
     font-weight: 600;
     color: #061e3b;
 }
 
-.form_registro_usuario{ background: rgb(231, 86, 37);
+
+
+.form_registro_usuario {
+    background: rgb(231, 86, 37);
     padding: 1%;
     margin-bottom: 2%;
     margin-left: 1%;
     margin-right: 1%;
 }
 
-.form_product_select{ background: rgb(231, 86, 37);
+.form_product_select {
+    background: rgb(231, 86, 37);
     padding: 1%;
     margin-bottom: 2%;
     margin-left: 1%;
     margin-right: 1%;
 }
-.form_metodo_pago{ background: rgb(231, 86, 37);
+
+.form_metodo_pago {
+    background: rgb(231, 86, 37);
     padding: 1%;
     margin-bottom: 2%;
     margin-left: 1%;
     margin-right: 1%;
 }
-.form_tipo_despacho{ background: rgb(231, 86, 37);
+
+.form_tipo_despacho {
+    background: rgb(231, 86, 37);
     padding: 1%;
     margin-bottom: 2%;
     margin-left: 1%;
     margin-right: 1%;
+}
+
+html {
+    height: 98%;
+}
+
+.content {
+    flex: 1;
+}
+
+
+.btn-bootstrap {
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color .15s ease-in-out;
+}
+
+.btn-bootstrap:hover,
+.btn-bootstrap:focus {
+    background-color: #0069d9;
+}
+
+.btn-bootstrap:active {
+    background-color: #0062cc;
+}
+
+.footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #F97DCC;
+    color: #fffeca;
 }
