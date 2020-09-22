@@ -11,15 +11,15 @@
 
     <script src="validarRut.js"></script>
     <script>
-        $(function(){
+        $(function() {
             $("#Formulario").validate();
-    });
+        });
     </script>
 
     <title> Formulario </title>
 </head>
 
-<body class="body_color" >
+<body class="body_color">
     <header>
         <div class="center-lg center-xs center-lg">
             <div class="header">
@@ -30,39 +30,35 @@
     </header>
 
     <div class="center-lg center-xs center-lg">
-            <h3>
-                Volver a la <a href="Index.html">Página principal</a>
-            </h3>
-        </div>
+        <h3>
+            Volver a la <a href="Index.html">Página principal</a>
+        </h3>
+    </div>
 
     <!-- metodo POST: envía los datos ocultos a la"" vista del usuario -->
     <!-- metodo GET: envía los datos a la vista del usuario -->
     <form method="POST" action="formulario.html">
-        <div class="container" >
+        <div class="container">
             <div class="form_registro_usuario left-lg left-xs label">
                 <table class="table">
                     <label><h4>Ingrese sus datos</h4></label>
                     <tr>
                         <td><label>Nombre:</label>
                         </td>
-                        <td><input type="text" name="nombres" required pattern="[A-Za-z0-9- ]+" minlength="2" maxlength="30"
-                            placeholder="Primer y segundo nombre"></td>
+                        <td><input type="text" name="nombres" required pattern="[A-Za-z0-9- ]+" minlength="2" maxlength="30" placeholder="Primer y segundo nombre"></td>
                     </tr>
                     <tr>
                         <td><label>Apellido paterno:</label>
                         </td>
-                        <td><input type="text" name="apellidoPat" required pattern="[A-Za-z0-9]+" minlength="2" maxlength="15"
-                            placeholder="apellido paterno"></td>
+                        <td><input type="text" name="apellidoPat" required pattern="[A-Za-z0-9]+" minlength="2" maxlength="15" placeholder="apellido paterno"></td>
                     </tr>
                     <tr>
                         <td> <label>Apellido materno:</label></td>
-                        <td> <input type="text" name="apellidoMat" required pattern="[A-Za-z0-9]+" minlength="2" maxlength="15"
-                            placeholder="apellido materno"></td>
+                        <td> <input type="text" name="apellidoMat" required pattern="[A-Za-z0-9]+" minlength="2" maxlength="15" placeholder="apellido materno"></td>
                     </tr>
                     <tr>
                         <td><label>RUN:</label></td>
-                        <td><input type="text" name="rut" required minlength="8" maxlength="9" 
-                            placeholder="Sin puntos y sin guíon"></td>
+                        <td><input type="text" name="rut" required minlength="8" maxlength="9" placeholder="Sin puntos y sin guíon"></td>
                     </tr>
                     <tr>
                         <td><label>Fecha de nacimiento:</label></td>
@@ -70,8 +66,7 @@
                     </tr>
                     <tr>
                         <td><label>Fono contacto</label></td>
-                        <td><input type="text" name="fono" required pattern="[0-9]+" minlength="9" maxlength="11"
-                            placeholder="Fono contacto"></td>
+                        <td><input type="text" name="fono" required pattern="[0-9]+" minlength="9" maxlength="11" placeholder="Fono contacto"></td>
                     </tr>
                     <tr>
                         <td><label>Correo electrónico</label></td>
@@ -92,12 +87,12 @@
                             <option> Quillota </option>
                         </select></td>
                     </tr>
-                   
+
                 </table>
-            
-            
-                
-               
+
+
+
+
 
             </div>
         </div>
@@ -106,46 +101,46 @@
 
             <input type="checkbox">
             <label>Conjunto niño</label>
-                <br>
-                <input type="checkbox">
-                <label>Conjunto niña</label>
-                    <br>
-                    <input type="checkbox">
-                    <label>Chaqueta niño</label>
-                        <br>
-                        <input type="checkbox">
-                        <label>Chaqueta niña</label>
-                            <br>
-                            <input type="checkbox">
-                            <label>Zapatilla niño</label>
-                                <br>
-                                <input type="checkbox">
-                                <label>Zapatilla niña</label>
-                                    <br>
-                                    <input type="checkbox">
-                                    <label>Vestido rosa</label>
-                                        <br>
-                                        <input type="checkbox">
-                                        <label>Vestido verde</label>
-                                            <br>
-                                            <input type="checkbox">
-                                            <label>Short azul</label>
-                                                <br>
-                                                <input type="checkbox">
-                                                <label>Short verde</label>
-                                                    <br>
-                                                    <input type="checkbox">
-                                                    <label>Jeans niño</label>
-                                                        <br>
-                                                        <input type="checkbox">
-                                                        <label>Jeans niña</label>
-                                                            <br>
-                                                            <input type="checkbox">
-                                                            <label>Polera niño</label>
-                                                            <br>
-                                                                <input type="checkbox">
-                                                                 <label>Polera niña</label>
-                                                                <br><br>
+            <br>
+            <input type="checkbox">
+            <label>Conjunto niña</label>
+            <br>
+            <input type="checkbox">
+            <label>Chaqueta niño</label>
+            <br>
+            <input type="checkbox">
+            <label>Chaqueta niña</label>
+            <br>
+            <input type="checkbox">
+            <label>Zapatilla niño</label>
+            <br>
+            <input type="checkbox">
+            <label>Zapatilla niña</label>
+            <br>
+            <input type="checkbox">
+            <label>Vestido rosa</label>
+            <br>
+            <input type="checkbox">
+            <label>Vestido verde</label>
+            <br>
+            <input type="checkbox">
+            <label>Short azul</label>
+            <br>
+            <input type="checkbox">
+            <label>Short verde</label>
+            <br>
+            <input type="checkbox">
+            <label>Jeans niño</label>
+            <br>
+            <input type="checkbox">
+            <label>Jeans niña</label>
+            <br>
+            <input type="checkbox">
+            <label>Polera niño</label>
+            <br>
+            <input type="checkbox">
+            <label>Polera niña</label>
+            <br><br>
         </div>
 
         <div class="form_tipo_despacho left-lg left-xs">
@@ -172,9 +167,9 @@
         <form method="get" action="Pago.html">
 
             <input type="submit" value="Siguiente" />
-       <!-- <button type="submit" value="Submit" style='width:110px; height:50px'>Siguiente</button>-->
+            <!-- <button type="submit" value="Submit" style='width:110px; height:50px'>Siguiente</button>-->
     </div>
-    
+
 
 </body>
 

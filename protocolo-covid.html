@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -8,48 +8,52 @@
     <link rel="stylesheet" href="CSS/flexboxgrid.css" type="text/css">
     <link rel="stylesheet" href="CSS/slider.css" type="text/css">
     <link rel="stylesheet" href="CSS/lightbox.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/Protocolo.js"></script>
+
     <title>Protocolo-covid</title>
 </head>
 
 <body>
-    <header>
-        <div class="protocolo-covid"> <a href="protocolo-covid.html" title="Protocolo Covid-19">
-                <section class="top-line-blue">
+    <div class="content">
+        <header>
+            <div class="protocolo-covid">
+                <a href="protocolo-covid.html" title="Protocolo Covid-19">
                     <p style="color: white;">¡Seguimos despachando en todas las comunas en cuarentena! <u>
-                            <strong>Protocolo
-                                COVID-19</strong> </u></p>
-                </section>
-            </a></div>
-    </header>
-    <div class="title-covid">
-        <h1>Protocolo Covid-19</h1>
+                        <strong>Protocolo
+                            COVID-19</strong> </u></p>
+                </a>
+            </div>
+        </header>
+        <div class="col center-xs center-md center-sm row">
+            <h1>Protocolo Covid-19</h1>
+        </div>
+        <div class="row col-md-12 col-xs-12 col-lg-offset-2 col-lg-8 center-lg center-xs">
+            <p>
+                En Closet Infantil estamos fuertemente comprometidos con tu salud y la de tus niños. Es por esto que seguimos tomando todas las medidas sanitarias que exige la ley para poder llevar a tu hogar de la forma más segura posible todo lo que necesitas para
+                protegerlos de este invierno. Nuestro equipo continúa trabajando arduamente para que tu pedido llegue sin problemas en la fecha estipulada y de forma segura.
+            </p>
+        </div>
+        <div class="center-md center-lg col-lg-5 col col-lg-12 col-md-12">
+            <img class="img_protocol_covid" src="IMG/Protocolo_Covid/covidprotocol.JPG" alt="covidprotocol">
+        </div>
+        <br>
+        <div class="row center-xs center-md center-lg">
+            <button id="volver" class="btn-bootstrap ">
+            Volver
+        </button>
+        </div>
     </div>
-    <div class="subtitle-covid">
-        <p>
-            Eny Closet Infantil estamos fuertemente comprometidos con tu salud y la de tus niños. Es por esto que
-            seguimos tomando
-            todas las medidas sanitarias que exige la ley para poder llevar a tu hogar de la forma más segura posible
-            todo
-            lo que necesitas para protegerlos de este invierno.
-
-            Nuestro equipo continúa trabajando arduamente para que tu pedido llegue sin problemas en la fecha estipulada
-            y
-            de forma segura.
-        </p>
-    </div>
-
-
-        <div class="img_protocol_covid">
-
-            <img src="IMG/Protocolo_Covid/covidprotocol.JPG" alt="covidprotocol">
-        </div>>
-
-
-
-
-
-
-
+    <br>
+    <footer class=" footer  center-lg center-md center-sm center-xs">
+        Desarrollado y Pantentado por Grupo Importante bajo licencia.
+    </footer>
+    <script>
+        $("#volver").click(function() {
+            window.location.href = "index.html"
+        })
+    </script>
 </body>
 
 </html>
