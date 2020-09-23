@@ -1,23 +1,33 @@
 /*Efectos Generales*/
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+.colorblanco {
+    color: white;
+}
+
+body {
     background: rgb(9, 197, 153);
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
     padding-top: 55px;
 }
-header{
+
+header {
     background: rgb(231, 86, 37);
     position: fixed;
     width: 100%;
     top: 0%;
 }
+
+
 /*Efectos Menu*/
-.menu{
+
+.menu {
     width: 90%;
     max-width: 1000px;
     margin: auto;
@@ -26,28 +36,34 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.logo2{
+
+.logo2 {
     display: inline-block;
     margin-right: 1em;
 }
-.logo2 img{
+
+.logo2 img {
     vertical-align: top;
     height: 40px;
 }
-.btn-menu{
+
+.btn-menu {
     display: none;
     color: #fff;
     text-decoration: none;
     font-size: 1em;
 }
-.logo2:hover{
-    background:rgb(231, 86, 37) ;
+
+.logo2:hover {
+    background: rgb(231, 86, 37);
 }
-.enlaces{
+
+.enlaces {
     display: inline-block;
     text-align: right;
 }
-.enlaces a{
+
+.enlaces a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
@@ -55,39 +71,46 @@ header{
     text-align: center;
     font-size: 1em;
 }
-.enlaces i{
+
+.enlaces i {
     margin-right: 5px;
 }
-.enlaces a:hover{
+
+.enlaces a:hover {
     background: #fff;
     color: blue;
 }
-.headroom{
+
+.headroom {
     transition: transform .3s ease;
 }
-.headroom--pinned{
+
+.headroom--pinned {
     transform: translateY(0%);
 }
-.headroom--unpinned{
+
+.headroom--unpinned {
     transform: translateY(-100%);
 }
 
+
 /*Mediaquaries */
+
 @media screen and (max-width: 700px) {
     header .menu {
-    flex-direction:column;
+        flex-direction: column;
     }
-    header .menu .logo2{
+    header .menu .logo2 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
         padding: 1em;
     }
-    header .menu .logo2 .btn-menu{
+    header .menu .logo2 .btn-menu {
         display: inline-block;
     }
-    header .menu .enlaces{
+    header .menu .enlaces {
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -96,12 +119,15 @@ header{
     }
 }
 
+
 /*Efectos Protocolo covid*/
-.protocolo-covid {  
+
+.protocolo-covid {
     background: rgb(24, 40, 69);
-    text-align: center;               
+    text-align: center;
 }
-.bodyProtocol{
+
+.bodyProtocol {
     background: white;
 }
 
@@ -124,8 +150,6 @@ header{
     font-weight: 600;
     color: #061e3b;
 }
-
-
 
 .form_registro_usuario {
     background: rgb(231, 86, 37);
@@ -166,7 +190,6 @@ html {
 .content {
     flex: 1;
 }
-
 
 .btn-bootstrap {
     padding: .375rem .75rem;
