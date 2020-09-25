@@ -15,6 +15,9 @@
     <script src="js/headroom.min.js.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        var contador = 5
+    </script>
 
     <title>Index - El closet infantil </title>
 </head>
@@ -47,46 +50,60 @@
                 <a href="Galeria.html"><i class="fa fa-address-card" aria-hidden="true"></i> Galeria
 
                 </a>
-                <a href="contacto.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contacto
+                <a class="active" href="contacto.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contacto
 
                 </a>
             </div>
 
         </nav>
     </header>
-    <br><br><br>
 
-    <div class="form_registro_usuario container">
-        <label>
-            <h4>Seleccione tipo de pago</h4>
-        </label>
-        <br>
-        <div class="doscolumnas center-lg center-md center-sm">
-            <div class="col-lg-2 tarjetas">
-                <input name="MetodoPago" type="radio" value="debito" checked> <label>Débito</label>
-                <br>
-                <input name="MetodoPago" type="radio" value="visa"> <label>Visa</label>
-                <br>
-                <input name="MetodoPago" type="radio" value="mastercard"> <label>MasterCard</label>
-                <br>
-                <input name="MetodoPago" type="radio" value="transferencia"> <label>Transferencia</label>
-            </div>
-            <div class="col-lg-2">
-                <img class="img_tc" src="IMG/webpay.png" alt="" srcset="">
-            </div>
-        </div>
-    </div>
-    </div>
-
-
-    <div class="center-lg center-xs">
-        <button type="submit" value="Submit" class="btn-bootstrap">Pagar</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="center-lg center-md center-sm">
+        <h1>Pronto</h1>
+        <h1 id="clock">10</h1>
     </div>
 
     <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
     <footer class=" footer center-lg center-md center-sm center-xs">
         Desarrollado y Pantentado por Grupo Importante bajo licencia.
     </footer>
+
+    <script>
+        $(document).ready(function() {
+            cuentaatras();
+        })
+
+        function cuentaatras() {
+            $("#clock").text(contador);
+            contador--
+            if (contador < 0) {
+                window.location.href = "index.html"
+                contador = 5
+            }
+            setTimeout(() => {
+                cuentaatras()
+
+            }, 1000);
+
+        }
+    </script>
 </body>
 
 </html>

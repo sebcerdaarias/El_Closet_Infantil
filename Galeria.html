@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=700, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/flexboxgrid.css" type="text/css">
+    <link rel="stylesheet" href="CSS/slider.css" type="text/css">
+    <link rel="stylesheet" href="CSS/lightbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/font-awesome.min.css">
+    <script src="js/jquery-3.5.1.min.js.js"></script>
+    <script src="js/headroom.min.js.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+
+    <title>Index - El closet infantil </title>
+
+    <script>
+        var fotos = ["chaqueta_niña.jpg", "chaqueta_niño.jpg", "Conjunto_niña.jpg", "Conjunto_niño.jpg", "jeans_niña.jpg", "jeans_niño.jpg", "polera_niña.jpg", "polera_niño.jpg", "short_azul_niño.jpg", "short_verde_niño.jpg", "vestido_rosa.jpg", "vestido_verde.jpg", "zapatilla_niña.jpg", "zapatilla_niño.jpg"]
+
+        function nombre(elemento) {
+            var nombre = ""
+            nombre = elemento.slice(0, -4)
+            nombre = nombre.replace('_', " ");
+            return nombre
+        }
+
+        $(document).ready(function() {
+            $.each(fotos, function(ind, elem) {
+                $("#galerias").append("<div class='col-lg-2 '><a class='example-image-link' href='IMG/productos/" + elem + "' data-lightbox='example-set' data-title='" + nombre(elem) + "'><img class='img_pro2' src='IMG/productos/" + elem + "' alt='Fotografía de Chaqueta niño' /></a></div>")
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="protocolo-covid">
+            <a href="protocolo-covid.html" title="Protocolo Covid-19">
+                <section class="top-line-blue">
+                    <p class="colorblanco">¡Seguimos despachando en todas las comunas en cuarentena! <u>
+                            <strong>Protocolo
+                                COVID-19</strong> </u></p>
+                </section>
+            </a>
+        </div>
+        <nav class="menu">
+            <div class="logo2">
+                <a href="Index.html"><img src="IMG/Logo2.png" alt="logo2"></a>
+                <a href="#" class="btn-menu" id="btn-menu"> <i class=" icono fa fa-bars" aria-hidden="true"></i></a>
+            </div>
+
+            <div class="enlaces" id="enlaces">
+
+                <a href="Index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio
+
+                </a>
+                <a href="formulario.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Compra
+
+                </a>
+                <a class="active" href="Galeria.html"><i class="fa fa-address-card" aria-hidden="true"></i> Galeria
+
+                </a>
+                <a href="contacto.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contacto
+
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <br><br><br>
+
+    <div class=" container">
+        <div class="center-sm center-md center-lg">
+            <h1>Galeria de imagenes</h1>
+        </div>
+        <br>
+        <div id="galerias" class=" row">
+            <!--<div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/chaqueta_niño.jpg" data-lightbox="example-set" data-title="Chaqueta niño precio referencia: $15.990"><img class="img_pro2" src="IMG/productos/chaqueta_niño.jpg" alt="Fotografía de Chaqueta niño" /></a>
+            </div>
+            <div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/Conjunto_niño.jpg" data-lightbox="example-set" data-title="Conjunto niño precio referencia: $12.990"><img class="img_pro2" src="IMG/productos/Conjunto_niño.jpg" alt="Fotografía de Conjunto niño" /></a>
+            </div>
+            <div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/jeans_niña.jpg" data-lightbox="example-set" data-title="Jeans niña precio referencia: $8.990"><img class="img_pro2" src="IMG/productos/jeans_niña.jpg" alt="Fotografía de Jeans niña" /></a>
+            </div>
+            <div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/jeans_niño.jpg" data-lightbox="example-set" data-title="Jeans niño precio referencia: $8.990"><img class="img_pro2" src="IMG/productos/jeans_niño.jpg" alt="Fotografía de Jeans niño" /></a>
+            </div>
+            <div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/short_azul_niño.jpg" data-lightbox="example-set" data-title="Short azul niño precio referencia: $4.990"><img class="img_pro2" src="IMG/productos/short_azul_niño.jpg" alt="Fotografía de Short verde niño" /></a>
+            </div>
+            <div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/short_verde_niño.jpg" data-lightbox="example-set" data-title="Short verde niño precio referencia: $4.990"><img class="img_pro2" src="IMG/productos/short_verde_niño.jpg" alt="Fotografía de Short azul niño" /></a>
+            </div>
+            <div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/vestido_rosa.jpg" data-lightbox="example-set" data-title="Vestido rosa precio referencia: $5.990"><img class="img_pro2" src="IMG/productos/vestido_rosa.jpg" alt="Fotografía de Vestido rosa" /></a>
+            </div>
+            <div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/vestido_verde.jpg" data-lightbox="example-set" data-title="Vestido verde precio referencia: $5.990"><img class="img_pro2" src="IMG/productos/vestido_verde.jpg" alt="Fotografía de Vestido verde" /></a>
+            </div>
+            <div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/zapatilla_niña.jpg" data-lightbox="example-set" data-title="Zapatilla niño precio referencia: $14.990"><img class="img_pro2" src="IMG/productos/zapatilla_niña.jpg" alt="Fotografía de Zapatilla niña" /></a>
+            </div>
+            <div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/polera_niña.jpg" data-lightbox="example-set" data-title="Polera niña precio referencia: $5.990"><img class="img_pro2" src="IMG/productos/polera_niña.jpg" alt="Fotografía de Polera niña" /></a>
+            </div>
+            <div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/polera_niño.jpg" data-lightbox="example-set" data-title="Polera niño precio referencia: $5.990"><img class="img_pro2" src="IMG/productos/polera_niño.jpg" alt="Fotografía de Polera niño" /></a>
+            </div>
+            <div class="col-lg-2 ">
+                <a class="example-image-link" href="IMG/productos/chaqueta_niña.jpg" data-lightbox="example-set" data-title="Chaqueta niña precio referencia: $15.990"><img class="img_pro2" src="IMG/productos/chaqueta_niña.jpg" alt="Fotografía de Chaqueta niña" /></a>
+            </div>-->
+
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row center-xs center-md center-lg">
+        <button id="volver" class="btn-bootstrap ">
+            Volver
+        </button>
+    </div>
+    <br>
+    <br>
+
+
+    <footer class=" footer center-lg center-md center-sm center-xs">
+        Desarrollado y Pantentado por Grupo Importante bajo licencia.
+    </footer>
+
+    <script>
+        $("#volver").click(function() {
+            window.location.href = "index.html"
+        })
+    </script>
+</body>
+
+</html>

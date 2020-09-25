@@ -47,13 +47,13 @@
                 <a href="Index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio
 
                 </a>
-                <a href="formulario.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Compra
+                <a class="active" href="formulario.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Compra
 
                 </a>
                 <a href="Galeria.html"><i class="fa fa-address-card" aria-hidden="true"></i> Galeria
 
                 </a>
-                <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contacto
+                <a href="contacto.html"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contacto
 
                 </a>
             </div>
@@ -64,7 +64,7 @@
     </br>
     <!-- metodo POST: envía los datos ocultos a la"" vista del usuario -->
     <!-- metodo GET: envía los datos a la vista del usuario -->
-    <form method="POST" action="formulario.html">
+    <form method="POST" action="Pago.html">
         <div class="container">
             <div class="form_registro_usuario left-lg left-xs label">
                 <table class="table">
@@ -91,7 +91,7 @@
                     </tr>
                     <tr>
                         <td><label>Fecha de nacimiento:</label></td>
-                        <td><input type="date" name="fechaNac" min="1930-01-01" max="2001-01-01" required></td>
+                        <td><input type="date" name="fechaNac" min="1950-01-01" max="2022-01-01" required></td>
                     </tr>
                     <tr>
                         <td><label>Fono contacto</label></td>
@@ -104,7 +104,6 @@
                     <tr>
                         <td><label>Comuna</label></td>
                         <td> <select name="comuna">
-                                <option selected>Seleccione una</option>
                                 <option> Valparaíso</option>
                                 <option> Casablanca </option>
                                 <option> Concón </option>
@@ -120,7 +119,6 @@
                 </table>
             </div>
         </div>
-
         <div class="container">
 
             <div class="form_registro_usuario">
@@ -130,7 +128,7 @@
                 <br>
                 <div class="doscolumnas">
                     <div class="col-lg-4">
-                        <input type="checkbox">
+                        <input type="checkbox" checked>
                         <label>Conjunto niño</label>
                         <br>
                         <input type="checkbox">
@@ -177,13 +175,12 @@
                 </div>
             </div>
         </div>
-
         <div class="container">
             <div class="form_registro_usuario left-lg left-xs label">
                 <label>
                         <h4>Seleccione tipo de despacho</h4>
                     </label>
-                <input name="tipoDespacho" type="radio" value="a_domicilio"> <label>Despacho a domicilio</label>
+                <input name="tipoDespacho" type="radio" value="a_domicilio" checked> <label>Despacho a domicilio</label>
                 <br>
                 <input name="tipoDespacho" type="radio" value="retiro_tienda"> <label>Retiro en tienda</label>
             </div>
@@ -193,16 +190,12 @@
             <h4><label>Háganos saber si tiene algún comentario adicional</label></h4>
             <!-- rows= alto del cuadro de texto -->
             <!-- cols= ancho del cuadro de texto -->
-            <textarea maxlength="100" rows="5" cols="60"></textarea>
+            <textarea required maxlength="100" rows="5" cols="60"></textarea>
         </div>
-
+        <div class="center-lg center-xs">
+            <input class="btn-bootstrap" type="submit" value="Ir al pago" />
+        </div>
     </form>
-    <div class="center-lg center-xs">
-        <form method="get" action="Pago.html">
-
-            <input class="btn-bootstrap" type="submit" value="Siguiente" />
-            <!-- <button type="submit" value="Submit" style='width:110px; height:50px'>Siguiente</button>-->
-    </div>
     <br>
     <br>
     <br>

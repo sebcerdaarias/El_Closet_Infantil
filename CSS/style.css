@@ -4,6 +4,10 @@
     display: flex;
 }
 
+#clock {
+    font-size: 110px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -85,6 +89,11 @@ header {
     color: blue;
 }
 
+.enlaces .active {
+    background: #fff;
+    color: blue;
+}
+
 .headroom {
     transition: transform .3s ease;
 }
@@ -135,11 +144,33 @@ header {
     background: white;
 }
 
+.tarjetas {
+    text-align: left;
+}
+
 .img_protocol_covid {
     width: 65%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.img_tc {
+    width: 110%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_pro {
+    width: 110%;
+    padding: 0px 0px 0px 10px;
+}
+
+.img_pro2 {
+    width: 200px;
+    height: 250px;
+    padding: 0px 0px 0px 10px;
 }
 
 .subtitle-covid {
